@@ -19,6 +19,11 @@ Route::get('/index', function(){
     return view('layouts.master');
 });
 
+Route::get('/met5', function(){
+    dd('asdas');
+    return view('metronic_v4.5.2');
+});
+
 Route::get('/test', 'StockJobsController@getAllStocks');
 
 Route::get('/q/{stockCode}', 'StockJobsController@getStock');

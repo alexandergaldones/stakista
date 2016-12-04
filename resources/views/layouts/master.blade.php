@@ -56,19 +56,6 @@
                         <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
                             <i class="icon-bell"></i> Alerts </a>
                     </li>
-                    <li>
-                        <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
-                            <i class="icon-info"></i> Notifications </a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
-                            <i class="icon-speech"></i> Activities </a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a href="javascript:;" data-target="#quick_sidebar_tab_3" data-toggle="tab">
-                            <i class="icon-settings"></i> Settings </a>
-                    </li>
                 </ul>
             </li>
         </ul>
