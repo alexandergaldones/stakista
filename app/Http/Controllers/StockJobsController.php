@@ -40,7 +40,6 @@ class StockJobsController extends Controller
         {
             return Cache::get('allstocks');
         } else {
-            dd('dont recache na');
             $data = $this->rawApiSource->getCompanyInfos();
             Cache::forever('allstocks', $data);
             return $data;
@@ -59,7 +58,7 @@ class StockJobsController extends Controller
             return Cache::get('top_actives_' . $date);
         } else {
             $data = $this->rawApiSource->getTopActives($date);
-            Cache::forever('top_actives_' . $date,  $data);
+            Cache::put('top_actives_' . $date,  $data, 5);
             return $data;
         }
     }
@@ -81,7 +80,7 @@ class StockJobsController extends Controller
             {
                 $data[ $sector['indexName'] ] = $sector;
             }
-            Cache::forever('market_sectors_' . $date,  $data);
+            Cache::put('market_sectors_' . $date,  $data, 5);
             return $data;
         }
     }
@@ -98,7 +97,7 @@ class StockJobsController extends Controller
             return Cache::get('top_gainers_' .$date);
         } else {
             $data = $this->rawApiSource->getTopGainers();
-            Cache::forever('top_gainers_' . $date,  $data);
+            Cache::put('top_gainers_' . $date,  $data, 5);
             return $data;
         }
     }
@@ -115,7 +114,7 @@ class StockJobsController extends Controller
             return Cache::get('top_losers_' .$date);
         } else {
             $data = $this->rawApiSource->getTopLosers();
-            Cache::forever('top_losers_' . $date,  $data);
+            Cache::put('top_losers_' . $date,  $data, 5);
             return $data;
         }
     }

@@ -50,7 +50,7 @@ class StoreStockInfos extends Command
         foreach($stocks as $code => $stock)
         {
             try {
-                $this->info('Caching Stock Code:' . $code);
+                $this->info('Caching Stock Code:' . $code . ' - ' . $stock['securityName']);
                 $apiRequest = new ApiRequestController(
                     config('default.stockinfos_api')['companyInfo'],
                     'POST',

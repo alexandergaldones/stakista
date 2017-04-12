@@ -156,6 +156,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        #stakista imports
+        Intervention\Image\ImageServiceProvider::class,
+        Thujohn\Twitter\TwitterServiceProvider::class,
+
     ],
 
     /*
@@ -201,6 +205,13 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        #custom stakista classes
+        'Helper' => App\Http\Helpers\Helper::class,
+
+
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Twitter' => \Thujohn\Twitter\Facades\Twitter::class,
 
     ],
 

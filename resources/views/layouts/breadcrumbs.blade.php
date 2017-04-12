@@ -1,5 +1,5 @@
 <div class="breadcrumbs">
-    <h1>Dashboard</h1>
+    <h1>@yield('headerTitle')</h1>
     <ol class="breadcrumb">
         <li>
             <a href="#">Home</a>

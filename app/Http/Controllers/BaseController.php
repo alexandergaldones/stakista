@@ -9,7 +9,7 @@
 namespace App\Http\Controllers;
 
 
-class BaseController
+class BaseController extends Controller
 {
 
 }

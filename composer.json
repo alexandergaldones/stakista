@@ -7,7 +7,8 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+	"aimeos/aimeos-laravel": "~2016.10"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -42,7 +43,9 @@
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "php artisan optimize"
+            "php artisan optimize",
+	    "php artisan vendor:publish --tag=public --force",
+            "php artisan vendor:publish"
         ]
     },
     "config": {

@@ -20,22 +20,21 @@ Route::get('/index', function(){
 });
 
 Route::get('/met5', function(){
-    dd('asdas');
     return view('metronic_v4.5.2');
 });
 
 Route::get('/test', 'StockJobsController@getAllStocks');
 
-Route::get('/q/{stockCode}', 'StockJobsController@getStock');
+Route::get('/q/{stockCode}', 'StockController@showInfo');
 
 //top actives
-Route::get('/actives', 'StockJobsController@getTopActives');
+Route::get('/actives', 'DashboardController@topActives');
 
 //top gainers
-Route::get('/gainers', 'StockJobsController@getTopGainers');
+Route::get('/gainers', 'DashboardController@topGainers');
 
 //top gainers
-Route::get('/losers', 'StockJobsController@getTopLosers');
+Route::get('/losers', 'DashboardController@topLosers');
 
 //market sectors
 Route::get('/sectors', 'StockJobsController@getMarketSectors');

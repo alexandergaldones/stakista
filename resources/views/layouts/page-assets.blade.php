@@ -41,17 +41,17 @@
     <script src="/met5/assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL PLUGINS -->
     <!-- BEGIN THEME GLOBAL SCRIPTS -->
-    <script src="/met5/assets/global/scripts/app.min.js" type="text/javascript"></script>
+    <script src="/met5/assets/global/scripts/app.js" type="text/javascript"></script>
     <!-- END THEME GLOBAL SCRIPTS -->
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="/met5/assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
+    <script src="/met5/assets/pages/scripts/dashboard.js" type="text/javascript"></script>
     <!-- END PAGE LEVEL SCRIPTS -->
     <!-- BEGIN THEME LAYOUT SCRIPTS -->
-    <script src="/met5/assets/layouts/layout5/scripts/layout.min.js" type="text/javascript"></script>
-    <script src="/met5/assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+    <script src="/met5/assets/layouts/layout5/scripts/layout.js" type="text/javascript"></script>
+    <script src="/met5/assets/layouts/global/scripts/quick-sidebar.js" type="text/javascript"></script>
     <!-- END THEME LAYOUT SCRIPTS -->
     <!--[if lt IE 9]>
-    <script src="/met5/assets/global/plugins/respond.min.js"></script>
-    <script src="/met5/assets/global/plugins/excanvas.min.js"></script>
+    <script src="/met5/assets/global/plugins/respond.js"></script>
+    <script src="/met5/assets/global/plugins/excanvas.js"></script>
     <![endif]-->
 @show
